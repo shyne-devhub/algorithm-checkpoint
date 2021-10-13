@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorith Checkpoint</title>
+  </head>
+  <body>
+    <script>
+      function countingStrings(str) {
+        var vowelNo = 0;
+        const vowels = "aeiou";
+        var countLetters = 0;
+        var lengthCount = 0;
+
+        var totalLength = str.split(" ").length;
+
+        for (var i = 0; i < str.length; i++) {
+          if (vowels.indexOf(str[i].toLowerCase()) > -1) {
+            vowelNo++;
+          }
+        }
+
+        while (str[lengthCount] !== undefined) {
+          lengthCount++;
+        }
+        console.log(
+          "The number of vowel is" +
+            " " +
+             vowelNo +
+            " and total string is" +
+            " " +
+            totalLength +
+            " " +
+            "and word length is " +
+            " " +
+            lengthCount
+        );
+      }
+
+      countingStrings("America is a beautiful place more than in Africa");
+    </script>
+  </body>
+</html>
